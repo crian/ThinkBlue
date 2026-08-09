@@ -29,11 +29,10 @@ modules:
         - fastfetch
         - fd-find
         - gnome-tweaks
-        - ImageMagick
-        - lm-sensors
+        - lm_sensors
         - micro
         - nautilus-python
-        - nethog
+        - nethogs
         - ripgrep
         - starship
         - zoxide
