@@ -28,6 +28,8 @@ modules:
         - eza
         - fastfetch
         - fd-find
+        - ghostty
+        - ghostty-nautilus
         - gnome-tweaks
         - lm_sensors
         - micro
@@ -44,6 +46,7 @@ modules:
         - gnome-software
         - gnome-system-monitor
         - nvtop
+        - ptyxis
 
   - type: default-flatpaks
     configurations:
