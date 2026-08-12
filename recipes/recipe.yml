@@ -37,12 +37,19 @@ modules:
         - nethogs
         - ripgrep
         - starship
+        - xdg-terminal-exec
         - zoxide
     remove:
       packages:
         - htop
         - firefox
         - firefox-langpacks
+        - gnome-classic-session
+        - gnome-shell-extension-apps-menu
+        - gnome-shell-extension-background-logo
+        - gnome-shell-extension-launch-new-instance
+        - gnome-shell-extension-places-menu
+        - gnome-shell-extension-window-list
         - gnome-software
         - gnome-system-monitor
         - nvtop
@@ -50,7 +57,7 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
+      - notify: false # Send notification after install/uninstall is finished (true/false)
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
@@ -65,6 +72,8 @@ modules:
           - org.gnome.Papers
           - org.gnome.TextEditor
           - org.gnome.Weather
+          - org.gtk.Gtk3theme.adw-gtk3
+          - org.gtk.Gtk3theme.adw-gtk3-dark
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
