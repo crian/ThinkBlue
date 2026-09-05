@@ -74,6 +74,7 @@ modules:
           - org.gnome.Weather
           - org.gtk.Gtk3theme.adw-gtk3
           - org.gtk.Gtk3theme.adw-gtk3-dark
-      - scope: user # Also add Flathub user repo, but no user packages
+      - notify: false
+        scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
